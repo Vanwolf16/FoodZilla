@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		B4407BAB24986BC000753313 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4407BAA24986BC000753313 /* AppDelegate.swift */; };
 		B4407BAD24986BC000753313 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4407BAC24986BC000753313 /* SceneDelegate.swift */; };
-		B4407BAF24986BC000753313 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4407BAE24986BC000753313 /* ViewController.swift */; };
+		B4407BAF24986BC000753313 /* StoreFrontVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4407BAE24986BC000753313 /* StoreFrontVC.swift */; };
 		B4407BB224986BC000753313 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4407BB024986BC000753313 /* Main.storyboard */; };
 		B4407BB424986BC200753313 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4407BB324986BC200753313 /* Assets.xcassets */; };
 		B4407BB724986BC200753313 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4407BB524986BC200753313 /* LaunchScreen.storyboard */; };
+		B45CC103249968CD00B04AE3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45CC102249968CD00B04AE3 /* Item.swift */; };
+		B4D7EADF24995F7D00B91A7F /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D7EADE24995F7D00B91A7F /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B4407BA724986BC000753313 /* FoodZilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodZilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4407BAA24986BC000753313 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4407BAC24986BC000753313 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B4407BAE24986BC000753313 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B4407BAE24986BC000753313 /* StoreFrontVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreFrontVC.swift; sourceTree = "<group>"; };
 		B4407BB124986BC000753313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4407BB324986BC200753313 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4407BB624986BC200753313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4407BB824986BC200753313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B45CC102249968CD00B04AE3 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		B4D7EADE24995F7D00B91A7F /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		B4407BA924986BC000753313 /* FoodZilla */ = {
 			isa = PBXGroup;
 			children = (
+				B4A656312499560600A24E12 /* Model */,
+				B4A656302499560200A24E12 /* View */,
+				B4A6562F249955FB00A24E12 /* Controller */,
 				B4407BAA24986BC000753313 /* AppDelegate.swift */,
 				B4407BAC24986BC000753313 /* SceneDelegate.swift */,
-				B4407BAE24986BC000753313 /* ViewController.swift */,
 				B4407BB024986BC000753313 /* Main.storyboard */,
 				B4407BB324986BC200753313 /* Assets.xcassets */,
 				B4407BB524986BC200753313 /* LaunchScreen.storyboard */,
 				B4407BB824986BC200753313 /* Info.plist */,
 			);
 			path = FoodZilla;
+			sourceTree = "<group>";
+		};
+		B4A6562F249955FB00A24E12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B4407BAE24986BC000753313 /* StoreFrontVC.swift */,
+				B4D7EADE24995F7D00B91A7F /* DetailVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B4A656302499560200A24E12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4A656312499560600A24E12 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B45CC102249968CD00B04AE3 /* Item.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4407BAF24986BC000753313 /* ViewController.swift in Sources */,
+				B45CC103249968CD00B04AE3 /* Item.swift in Sources */,
+				B4407BAF24986BC000753313 /* StoreFrontVC.swift in Sources */,
+				B4D7EADF24995F7D00B91A7F /* DetailVC.swift in Sources */,
 				B4407BAB24986BC000753313 /* AppDelegate.swift in Sources */,
 				B4407BAD24986BC000753313 /* SceneDelegate.swift in Sources */,
 			);
@@ -287,6 +319,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7M226WNK72;
 				INFOPLIST_FILE = FoodZilla/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +338,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7M226WNK72;
 				INFOPLIST_FILE = FoodZilla/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
