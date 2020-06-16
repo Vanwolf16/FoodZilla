@@ -16,17 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="y0R-TD-3fU">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="y0R-TD-3fU" customClass="ItemCe">
                                 <rect key="frame" x="20" y="94" width="374" height="748"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ArT-0v-tb9">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ArT-0v-tb9">
                                     <size key="itemSize" width="150" height="165"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="C6v-0z-93L">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="itemCell" id="C6v-0z-93L" customClass="ItemCell" customModule="FoodZilla" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="165"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Cff-Bd-hhF">
@@ -69,6 +69,11 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="150" height="165"/>
+                                        <connections>
+                                            <outlet property="image" destination="ALN-h0-s5D" id="K7i-2x-jBR"/>
+                                            <outlet property="nameLbl" destination="UDz-oN-RoD" id="k5J-xg-SNZ"/>
+                                            <outlet property="priceLbl" destination="j49-sQ-Bib" id="V9g-Hf-rrU"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
